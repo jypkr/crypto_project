@@ -1,0 +1,32 @@
+* {
+  font-family: 'Roboto Slab', serif;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+}
+
+/* Add a hover effect for buttons */
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add padding to containers */
+
+#registerCont {
+  padding-top: 9rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 600px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}

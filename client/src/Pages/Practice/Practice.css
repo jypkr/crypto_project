@@ -1,0 +1,35 @@
+.homePg {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Roboto Slab', serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom right, #002F67, #3993CD) no-repeat fixed;
+}
+
+.pgContent {
+	position: absolute;
+	height: 100%;
+	padding: 1rem;
+}
+
+/* small screens */
+
+@media screen and (max-width: 600px) {
+	.pgContent {
+		width: 100vw;
+	}
+}
+
+/* large screens */
+
+@media screen and (min-width: 600px) {
+	.pgContent {
+		width: calc(100% - 5rem);
+		left: 5rem;
+		transition: all 0.6s ease;
+	}
+}

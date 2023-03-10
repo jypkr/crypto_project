@@ -1,0 +1,34 @@
+#BackgroundVideo {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: brightness(65%);
+    -webkit-filter: brightness(65%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #globe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #globe {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #globe {
+        display: none;
+    }
+    body {
+        background: url('./Video/poster.jpg');
+        background-size: cover;
+    }
+}

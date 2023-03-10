@@ -1,0 +1,29 @@
+#right {
+  text-align: center;
+  align-content: center;
+  bottom: 0;
+  position: relative;
+  margin-top: 1rem;
+  height: auto;
+  width: auto;
+  color: rgb(174, 179, 179);
+}
+
+.link {
+  color: rgb(174, 179, 179);
+  cursor: pointer;
+  ;
+}
+
+@media screen and (max-width: 600px) {
+  #right {
+    width: auto;
+    bottom: 3rem !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #right {
+    transition: all 0.6s ease;
+  }
+}

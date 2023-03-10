@@ -1,0 +1,86 @@
+.leaderboardPg {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #002F67, #3993CD) no-repeat fixed;
+}
+
+.pgContent {
+  position: absolute;
+  height: 100%;
+  padding: 1rem;
+}
+
+#lbHeader {
+  padding: 0;
+}
+
+#lbTableCont {
+  padding: 0;
+  margin-top: 10px;
+}
+
+#lbTitle {
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xxx-large;
+}
+
+#lbIcon {
+  margin-right: 1rem;
+  color: yellow;
+}
+
+#lbTableTitle {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#topRankIcon {
+  color: yellow
+}
+
+.weekTogBtn {
+  border-radius: 20px !important;
+}
+
+/* .tableScroll {
+  height: 200px;
+  overflow: scroll;
+} */
+
+/* .tableScroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+} */
+
+/* small screens */
+
+@media screen and (max-width: 600px) {
+  .pgContent {
+    width: 100vw;
+  }
+  #lbTitle {
+    font-size: 43px;
+  }
+}
+
+/* large screens */
+
+@media screen and (min-width: 600px) {
+  .pgContent {
+    width: calc(100% - 5rem);
+    left: 5rem;
+    transition: all 0.6s ease;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "crypto-game-project",
+  "version": "1.0.0",
+  "description": "## Desctription CryptoMaster is a play investment game with virtual $100 which is given when users register for the website. Play the game for a week and able to see their weekly rankings by their profit. The market in the game will be same as real-time market(Stock or Cryptocurrency).",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*' \" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lan714/Crypto-Game-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lan714/Crypto-Game-Project/issues"
+  },
+  "homepage": "https://github.com/Lan714/Crypto-Game-Project#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "chart.js": "^3.6.0",
+    "concurrently": "^6.3.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14",
+    "passport": "0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "rc-table": "^7.19.0",
+    "react-bootstrap": "^2.0.0",
+    "react-chartjs-2": "^3.2.0",
+    "react-js-stickynav": "^1.0.2",
+    "save-dev": "^0.0.1-security"
+  }
+}
